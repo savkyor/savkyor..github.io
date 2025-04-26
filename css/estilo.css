@@ -1,0 +1,244 @@
+body{
+	/*background-image es para imagen de fondo*/
+	background-image:url("../imagenes/fondo.jpg");
+	/*font-family es para la tipografia de letra, las comas sirven para señalar que si no se encuentra una tipografia, ponga otra de mi agrado*/
+	font-family:"Tahoma","Economica";
+	/*color es para el color de las letras*/
+	color:black;
+	/*font-size es para el tamaño de la letra en pixeles*/
+	font-size:40px;
+	text-align: center
+}
+hr{
+		/*border es para la linea
+		el grosor indica en pixeles, indicamos el tipo de linea 
+		y el codigo del color*/
+		border:6px solid grey;
+		/*width es para el ancho de la linea*/
+		width:80%;
+		/*border-radius es para agregar curva al borde*/
+		border-radius:5px;
+}
+p{
+	text-align: center;
+	font-size:10;
+	color:blue;
+	/*letras negritas*/
+	font-weight:bold;
+	/*interlineado de parrafo*/
+	line-height:1;
+	/*color de fondo de letras*/
+	background-color:#b6aeb0;
+	/*espacio entre letras*/
+	letter-spacing:1px;
+}
+table,tr,td{
+	/*Atributos para celdas de la tabla*/
+	border:3px solid black;
+	border-spacing:0;
+	background-color:#b6aeb0;
+	font-size:30px;
+	text-align:justify;
+	font-weight:bold;
+	font-family:"tahoma";
+}
+/*Clase para los pies de pagina*/
+.pie{
+	text-align:center;
+	font-size:16px;
+	font-family:"mano";
+	font-weight:bold;
+	color:blue;
+}
+.encabezado{
+	text-align:center;
+	font-size:40px;
+	font-weight:bold;
+	color:blue;
+	font-family:"type";
+}
+div#jason{
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	color:black;
+	font-family:"sof";
+}
+
+
+div#top{
+	width:100%;
+	height:75px;
+	background-image:linear-gradient(#bebebe,#e3e1e2);
+	font-family:"type"; /*poner el nombre de la fuente en el codigo inferior*/
+}
+div#ppag{
+	width:100%;
+	height:100px;
+	background-image:linear-gradient(#bebebe,#e3e1e2);
+	font-family:"mano";
+	color: red;
+}
+/*carrousel de imagenes*/
+.carrousel{
+	width:600px;
+	margin:auto;
+	box-sizing:border-box;
+}
+.contecarrousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemcarrousel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouseltarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows> i:hover{
+	cursor:pointer;
+}
+.contecarrouselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+.contecarrouselcontroller> a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarrouselarrows> a > i{
+	color:white;
+}
+/*cajas para productos*/
+.caja{
+	height:350px;
+	width:150px;
+	background:#979394;
+	border:1px solid black;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow: 0 0 10px blue;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:black;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+div#texto1{
+	padding-top:5px;
+	font-size:20px;
+	background-color:#b5afb0;
+	font-family:"tahoma";
+	font-weight:bold;
+	height:200px;
+	width:600px;
+}
+/*Menu de navegación*/
+.navegacion{
+	display:flex;
+	height:100px;
+}
+.navegacion-item{
+	flex:1;
+	color:#8e8789;
+	font-weight:bold;
+	font-size:18px;
+	display:flex;
+	transition: flex-grow 0.2s;
+	justify-content:center;
+	align-items:center;
+}
+.navegacion-titulo{
+	margin:0;
+	transform:rotate(-90deg);
+	transition:transform 0.2s 0.2s;
+}
+.navegacion-item:hover{
+	flex-grow:10;
+}
+.navegacion-item:hover .navegacion-titulo{
+	transform:rotate(0);
+}
+.navegacion-item:nth-child(1){
+	background:#b4b1b2;
+}
+.navegacion-item:nth-child(2){
+	background:#c8c8c8;
+}
+.navegacion-item:nth-child(3){
+	background:#d9d7d8 ;
+}
+.navegacion-item:nth-child(4){
+	background:#eae6e7;
+}
+.cua{
+	text-align:center;
+	display:flex;
+	border:5px solid black;
+	padding:50px;
+	max-width:700px;
+	background-color:#beb7b8;
+}
+.image{
+	width:250px;
+	height:180px;
+	background-image:url(../imagenes/logo.jpg);
+	background-size:cover;
+	background-position:center;
+	margin-right:20px;
+}
+.text{
+	font-size:25px;
+}
+.navegacion-itemq{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+/*fuentes-tipograficas*/
+@font-face{
+	font-family:"type";
+	src:url(../fuentes/type.ttf);
+}
+@font-face{
+	font-family:"sof";
+	src:url(../fuentes/sof.ttf);
+}
+@font-face{
+	font-family:"mano";
+	src:url(../fuentes/mano.ttf);
+}
